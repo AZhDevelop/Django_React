@@ -1,0 +1,45 @@
+*** GIT ***
+git config --list
+git config --global user.name AZhDevelop
+git config --global user.email azh.develop@mail.ru
+
+git init
+git status
+git stash
+git pull
+
+git add .
+git commit -m "first commit"
+
+git log
+
+git config --global --add safe.directory '*'
+
+win: git gui
+
+*** GIT BRANCH ***
+Создание новой ветки
+git branch "branch_name"
+
+Переход на другую ветку
+git checkout "branch_name"
+
+*** TERMINAL ***
+Отображение скрытых файлов
+Mac: ls -la
+Win: ls -force
+
+Построение дерева папок
+tree
+
+*** PYTHON VIRTUAL ENVIROMENT ***
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+*** DJANGO ***
+django-admin startproject "project_name"
+python manage.py runserver
+
+*** REACT ***
+npx create-react-app "app_name"
+npm start
