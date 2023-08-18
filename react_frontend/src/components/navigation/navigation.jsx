@@ -1,10 +1,12 @@
-import style from '../style/navigation.module.css'
+import logo from './logo.jpeg'
+import style from './navigation.module.css'
 
 const Navigation = () => {
     return (
         <div className={style.navigation}>
             <div className={style.logo}>
-                <h1># Logo</h1>
+                <img src={logo} alt='Logo'></img>
+                <h3>AZhDevelop</h3>
             </div>
             <br></br>
             <nav className={style.menu}>
