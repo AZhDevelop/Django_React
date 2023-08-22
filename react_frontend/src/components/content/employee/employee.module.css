@@ -1,0 +1,15 @@
+.employee {
+    display: flex;
+    color: red;
+    align-items: center;
+
+    & img {
+        margin-left: 10px;
+        width: 50px;
+        border-radius: 30px;
+    }
+}
+
+.name {
+    margin-left: 10px;
+}
