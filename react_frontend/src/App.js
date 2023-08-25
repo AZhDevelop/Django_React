@@ -6,12 +6,20 @@ import Footer from './components/footer/footer.jsx';
 
 const App = () => {
   return (
-    <div className="app">
-      <Header />
-      <Navigation />
-      <Content />
-      <Footer />
-    </div>
+      <div className="app">
+        <div className='header'>
+          <Header />
+        </div>
+        <div className='navigation'>
+          <Navigation />
+        </div>
+        <div className='content'>
+          <Content />
+        </div>
+        <div className='footer'>
+          <Footer />
+        </div>
+      </div>
   );
 }
 

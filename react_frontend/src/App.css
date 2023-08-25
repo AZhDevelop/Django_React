@@ -18,6 +18,12 @@ html {
   grid-area: h;
 }
 
+.navigation {
+  grid-area: n;
+  background-color: #03111B;
+  color: white;
+}
+
 .content {
   grid-area: c;
 }

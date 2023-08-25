@@ -1,16 +1,18 @@
-import Employee from "./employee/employee";
+import Staff from "./staff/staff"
+import Functions from "./functions/functions";
+import Improvements from "./improvements/improvements";
+import { Routes, Route } from 'react-router-dom'
 
 const Content = () => {
     return (
-        <div className="content border-black">
-            <Employee name='Fernando' lastname='Alonso'/>
-            <Employee name='Lewis' lastname='Hamilton'/>
-            <Employee name='Charl' lastname='Leclerc'/>
-            <Employee name='Lando' lastname='Norris'/>
-            <Employee name='Alex' lastname='Albon'/>
-            <Employee name='Sergeo' lastname='Peres'/>
+        <div>
+            <Routes>
+                <Route path="/" element={<Staff />} />
+                <Route path="functions" element={<Functions />} />
+                <Route path="improvements" element={<Improvements />} />
+            </Routes>
         </div>
-    );
+    )
 }
 
 export default Content

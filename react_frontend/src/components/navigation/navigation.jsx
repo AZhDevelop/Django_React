@@ -1,5 +1,6 @@
 import logo from './logo.jpeg'
 import style from './navigation.module.css'
+import { NavLink } from 'react-router-dom'
 
 const Navigation = () => {
     return (
@@ -10,21 +11,21 @@ const Navigation = () => {
             </div>
             <br></br>
             <nav className={style.menu}>
-                <div className={style.menu_element}>
-                    <a href="#" className={style.link}>SR Staff</a>
-                </div>
-                <div className={style.menu_element}>
-                    <a href="#" className={style.link}>SR Functions</a>
-                </div>
-                <div className={style.menu_element}>
-                    <a href="#" className={style.link}>SR Improvements</a>
-                </div>
-                <div className={style.menu_element}>
-                    <a href="#" className={style.link}>SR Menu 4</a>
-                </div>
-                <div className={style.menu_element}>
-                    <a href="#" className={style.link}>SR Menu 5</a>
-                </div>
+                <NavLink to="/" className={style.link}>
+                    <div className={style.menu_element}>
+                        SR Staff
+                    </div>
+                </NavLink>
+                <NavLink to="/functions" className={style.link}>
+                    <div className={style.menu_element}>
+                        SR Functions
+                    </div>
+                </NavLink>
+                <NavLink to="/improvements" className={style.link}>
+                    <div className={style.menu_element}>
+                        SR Improvements
+                    </div>
+                </NavLink>
             </nav>
         </div>
     );
