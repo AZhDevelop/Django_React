@@ -1,51 +1,15 @@
 import style from './staff.module.css'
 import Employee from "./employee/employee";
 import EmployeeInfo from './employeeInfo/employeeInfo'
+import Filter from './filter/filter';
 
 const Staff = () => {
     return (
         <div className={style.staff}>
             <div className={style.filter}>
-                <div>
-                    <label>filter</label>
-                    <select>
-                        <option>filter 1</option>
-                        <option>filter 2</option>
-                        <option>filter 3</option>
-                        <option>filter 4</option>
-                        <option>filter 5</option>
-                    </select>
-                </div>
-                <div>
-                    <label>filter</label>
-                    <select>
-                        <option>filter 1</option>
-                        <option>filter 2</option>
-                        <option>filter 3</option>
-                        <option>filter 4</option>
-                        <option>filter 5</option>
-                    </select>
-                </div>
-                <div>
-                    <label>filter</label>
-                    <select>
-                        <option>filter 1</option>
-                        <option>filter 2</option>
-                        <option>filter 3</option>
-                        <option>filter 4</option>
-                        <option>filter 5</option>
-                    </select>
-                </div>
-                <div>
-                    <label>filter</label>
-                    <select>
-                        <option>filter 1</option>
-                        <option>filter 2</option>
-                        <option>filter 3</option>
-                        <option>filter 4</option>
-                        <option>filter 5</option>
-                    </select>
-                </div>
+                <Filter />
+                <Filter />
+                <Filter />
             </div>
             <div className={style.employee}>
                 <Employee name='Fernando' lastname='Alonso'/>
