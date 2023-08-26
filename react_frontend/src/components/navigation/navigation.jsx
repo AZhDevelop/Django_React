@@ -2,6 +2,8 @@ import logo from './logo.jpeg'
 import style from './navigation.module.css'
 import { NavLink } from 'react-router-dom'
 
+const active_style = ({isActive}) => isActive ? style.active : style.non_active
+
 const Navigation = () => {
     return (
         <div className={style.navigation}>
@@ -11,20 +13,14 @@ const Navigation = () => {
             </div>
             <br></br>
             <nav className={style.menu}>
-                <NavLink to="/" className={style.link}>
-                    <div className={style.menu_element}>
+                <NavLink to="/" className={active_style}>
                         SR Staff
-                    </div>
                 </NavLink>
-                <NavLink to="/functions" className={style.link}>
-                    <div className={style.menu_element}>
+                <NavLink to="/functions" className={active_style}>
                         SR Functions
-                    </div>
                 </NavLink>
-                <NavLink to="/improvements" className={style.link}>
-                    <div className={style.menu_element}>
+                <NavLink to="/improvements" className={active_style}>
                         SR Improvements
-                    </div>
                 </NavLink>
             </nav>
         </div>

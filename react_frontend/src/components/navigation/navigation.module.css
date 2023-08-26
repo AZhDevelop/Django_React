@@ -18,26 +18,36 @@
   
 .menu {
   text-indent: 30px;
+  display: flex;
+  flex-direction: column;
 }
   
-.menu_element {
+.non_active {
   height: 40px;
   margin-bottom: 10px;
   line-height: 40px;
   text-decoration: none;
-
-  &:hover {
-    background: linear-gradient(to right, white 5%, rgb(255, 255, 255, 0.2) 5%);
-    cursor: pointer;
-  }
-
-  &:active {
-    background: linear-gradient(to right, white 5%, gray 5%);
-  }
-}
-  
-.link {
-  text-decoration: none;
   color: white;
 }
 
+.non_active:hover {
+  background: linear-gradient(to right, white 5%, rgb(255, 255, 255, 0.2) 5%);
+  cursor: pointer;
+}
+
+.non_active:active {
+  background: linear-gradient(to right, white 5%, gray 5%);
+}
+
+.active {
+  height: 40px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, white 5%, #093453 5%);
+}
+
+.active:hover {
+  cursor: auto;
+}
