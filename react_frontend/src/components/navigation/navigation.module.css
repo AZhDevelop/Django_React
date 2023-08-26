@@ -4,6 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: white;
 
   & img {
     width: 40px;
