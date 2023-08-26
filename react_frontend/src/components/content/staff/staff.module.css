@@ -1,0 +1,33 @@
+.staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+    'g g' 
+    'e ei'
+}
+
+.filter {
+    border: 1px solid rgba(128, 128, 128, 0.132);
+    grid-area: g;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.employee {
+    border: 1px solid rgba(128, 128, 128, 0.132);
+    border-radius: 5px;
+    margin: 10px;
+    grid-area: e;
+}
+
+.employee_info {
+    border: 1px solid rgba(128, 128, 128, 0.132);
+    margin: 10px;
+    border-radius: 5px;
+    grid-area: ei;
+}

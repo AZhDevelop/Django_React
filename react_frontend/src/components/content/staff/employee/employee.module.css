@@ -1,4 +1,5 @@
 .employee {
+    margin-top: 10px;
     display: flex;
     color: red;
     align-items: center;

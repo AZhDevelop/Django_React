@@ -16,6 +16,13 @@ html {
 
 .header {
   grid-area: h;
+  margin: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.132);
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
 }
 
 .navigation {
@@ -26,6 +33,7 @@ html {
 
 .content {
   grid-area: c;
+  overflow-x: scroll;
 }
 
 .footer {
