@@ -1,0 +1,17 @@
+.reactapi {
+    margin-left: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #093453;
+    color: white;
+}
+
+.button:hover {
+    background-color: gray;
+    cursor: pointer;
+}

@@ -55,5 +55,5 @@
 }
 
 .active:hover {
-  cursor: auto;
+  cursor: default;
 }

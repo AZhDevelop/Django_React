@@ -17,6 +17,7 @@ const Navigation = () => {
                 <NavLink to="/" className={active_style}>SR Staff</NavLink>
                 <NavLink to="/functions" className={active_style}>SR Functions</NavLink>
                 <NavLink to="/improvements" className={active_style}>SR Improvements</NavLink>
+                <NavLink to="/reactapi" className={active_style}>SR API</NavLink>
             </nav>
         </div>
     );
