@@ -36,6 +36,10 @@ tree
 pip freeze > requirements.txt
 pip install -r requirements.txt
 
+pip install django-cors-headers
+pip install psycopg2
+pip install djangorestframework
+
 *** DJANGO ***
 django-admin startproject "project_name"
 django-admin startapp "app_name"

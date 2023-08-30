@@ -1,6 +1,7 @@
-# python
+# python, django
 .venv
 __pycache__
+**/migrations
 
 # dependencies
 react_frontend/node_modules
