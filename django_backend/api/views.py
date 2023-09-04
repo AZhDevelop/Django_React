@@ -9,4 +9,4 @@ class SRApiView(APIView):
 
     def get(self, request):
         sr_list = SR_Staff.objects.all().values()
-        return Response({'posts' : list(sr_list)})
+        return Response({'sr_staff' : list(sr_list)})

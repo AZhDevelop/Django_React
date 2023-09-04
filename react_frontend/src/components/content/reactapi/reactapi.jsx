@@ -6,7 +6,11 @@ const ReactApi = () => {
 
     const getURL = () => {
 
-        const get_request = fetch(api_url)
+        const get_request = fetch(api_url).then(response => {
+            debugger;
+        })
+        
+        
         return console.log(get_request)
 
     }

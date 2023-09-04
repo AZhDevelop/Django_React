@@ -26,7 +26,7 @@ SECRET_KEY = ServerConfig.secret_key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ServerConfig.allowed_hosts
+ALLOWED_HOSTS = []
 
 
 # Application definition
